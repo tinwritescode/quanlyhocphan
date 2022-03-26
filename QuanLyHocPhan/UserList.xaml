@@ -1,0 +1,54 @@
+﻿<Page x:Class="QuanLyHocPhan.UserList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuanLyHocPhan"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RoleList">
+
+    <Grid>
+        <StackPanel Margin="5">
+            
+        <Label Content="User list" FontSize="30" />
+        <!-- Action: Check info, cấp quyền cho user, cấp role cho user -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 5">
+            
+            <Button Content="Check info" Grid.Row="1"
+                Click="btnCheckInfo_Click"
+                HorizontalAlignment="Left" Width="123"
+                Margin="0,0,5,0"
+            
+            />
+            <Button Content="Grant role" Grid.Row="1"
+                Click="btnGrantRole_Click"
+                HorizontalAlignment="Left" Width="123"
+                Margin="0,0,5,0"
+    
+                />
+            <Button Content="Grant role" Grid.Row="1"
+                Click="btnGrantRole_Click"
+                HorizontalAlignment="Left" Width="123"
+            />
+            </StackPanel>
+        <DataGrid
+            VerticalScrollBarVisibility="Auto"
+            AutoGenerateColumns="False"
+            x:Name="UserDataGrid"
+            CanUserAddRows="False"
+            CanUserDeleteRows="False"
+           
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Width="300" Header="Username" Binding="{Binding Username}"  />
+                <DataGridTextColumn IsReadOnly="True" Width="100" Header="Roles" Binding="{Binding Roles}"  />
+                <DataGridCheckBoxColumn Width="40" Header="Selected" Binding="{Binding IsChecked}" />
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        </StackPanel>
+
+    </Grid>
+</Page>
