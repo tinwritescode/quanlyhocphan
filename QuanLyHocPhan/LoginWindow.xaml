@@ -30,12 +30,21 @@
 			<Label Content="Đăng nhập" FontSize="36" HorizontalAlignment="Center" />
 
 			<Label Content="Tên đăng nhập / MSSV" />
-			<TextBox />
-			<Label Content="Mật khẩu" />
-			<PasswordBox />
-			<Button>Đăng nhập</Button>
+			<TextBox x:Name="userId" />
+
+            <Label Content="Mật khẩu" />
+            <PasswordBox x:Name="password" />
+            
+            <Label Content="Port" />
+            <TextBox x:Name="port" Text="1521" />
+
+            <Label Content="Service name" />
+            <TextBox x:Name="serviceName" Text="xe" />
+
+            <Button x:Name="loginButton">Đăng nhập</Button>
 
 			<Button x:Name="switchToPortal">Switch to Portal (testing)</Button>
+            
 
 		</StackPanel>
 

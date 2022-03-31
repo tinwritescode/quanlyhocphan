@@ -35,7 +35,7 @@ namespace QuanLyHocPhan
 
         private void btnDanhSachNguoiDung_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new UserList();
+            Main.Content = new UserList(Connection);
         }
 
         private void btnDanhSachRole_Click(object sender, RoutedEventArgs e)
@@ -48,23 +48,60 @@ namespace QuanLyHocPhan
             Main.Content = new GroupInfo();
         }
 
-        public PortalWindow()
+        public PortalWindow(OracleConnection Connection)
         {
             InitializeComponent();
 
-            Main.Content = new UserList();
-
             try
             {
-                // Please replace the connection string attribute settings
-                Connection = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
-                Connection.Open();
+                this.Connection = Connection;
 
-                Console.WriteLine("Connected to Oracle Database {0}", Connection.ServerVersion);
+                // Check if the connection is open
+                if (Connection.State == System.Data.ConnectionState.Open)
+                {
+                    Console.WriteLine("Connected to Oracle Database {0}", Connection.ServerVersion);
+
+                    MessageBox.Show("Đăng nhập thành công " + Connection.ServerVersion);
+
+                    // fetch all users and MessageBox show
+                    OracleCommand cmd = new OracleCommand();
+                    cmd.Connection = Connection;
+                    cmd.CommandText = "SELECT * FROM all_users";
+
+                    cmd.CommandType = System.Data.CommandType.Text;
+
+                    OracleDataReader reader = cmd.ExecuteReader();
+
+                    // Create an array
+                    List<User> list = new List<User>();
+
+                    while (reader.Read())
+                    {
+                        // Console.WriteLine("{0} {1} {2}", reader.GetString(0), reader.GetString(1), reader.GetString(2));
+                        User user = new User();
+                        user.Username = reader.GetString(0);
+                        user.Roles = reader.GetString(2);
+
+                        list.Add(user);
+                    }
+
+                    reader.Dispose();
+                    cmd.Dispose();
+                }
+                else
+                {
+                    throw new Exception("Connection is not open");
+                }
+
+                // Set main content
+                Main.Content = new UserList(Connection);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error : {0}", ex);
+
+                // Alert
+                MessageBox.Show("Error : " + ex.Message);
             }
 
         }

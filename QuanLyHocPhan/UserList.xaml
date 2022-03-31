@@ -43,7 +43,6 @@
             <DataGrid.Columns>
                 <DataGridTextColumn IsReadOnly="True" Width="300" Header="Username" Binding="{Binding Username}"  />
                 <DataGridTextColumn IsReadOnly="True" Width="100" Header="Roles" Binding="{Binding Roles}"  />
-                <DataGridCheckBoxColumn Width="40" Header="Selected" Binding="{Binding IsChecked}" />
 
             </DataGrid.Columns>
 

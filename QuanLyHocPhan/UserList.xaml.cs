@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Oracle.ManagedDataAccess.Client;
 
 namespace QuanLyHocPhan
 {
@@ -24,7 +25,6 @@ namespace QuanLyHocPhan
         {
             set; get;
         }
-        public bool IsChecked { get; set; }
     }
 
 
@@ -36,6 +36,7 @@ namespace QuanLyHocPhan
         public int CurrentPage { get; set; }
         public int TotalPage { get; set; }
 
+        private List<User> users;
 
         public void btnCheckInfo_Click(object sender, RoutedEventArgs e)
         {
@@ -64,17 +65,21 @@ namespace QuanLyHocPhan
             // MessageBox.Show(string.Join(",", roles));
         }
 
-        public UserList()
+        public UserList(OracleConnection connection)
         {
             InitializeComponent();
 
             // Load data
-            UserDataGrid.ItemsSource = new List<User>()
-            {
-                new User() { Username = "admin", Roles = "admin,user", IsChecked = false },
-                new User() { Username = "trungtin", Roles = "admin", IsChecked = false }
-            };
+            // UserDataGrid.ItemsSource = new List<User>()
+            // {
+            //     new User() { Username = "admin", Roles = "admin,user" },
+            //     new User() { Username = "trungtin", Roles = "admin" }
+            // };
 
+            // set ItemsSource for DataGrid
+            users = new List<User>();
+
+            UserDataGrid.ItemsSource = users;
         }
     }
 }
