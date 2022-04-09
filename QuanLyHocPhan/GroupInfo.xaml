@@ -9,6 +9,8 @@
       Title="GroupInfo">
 
     <Grid>
-        <Label Content="Group Info" FontSize="30" />
+        <Label Content="Cấp role cho người dùng" FontSize="30" />
+
+        
     </Grid>
 </Page>

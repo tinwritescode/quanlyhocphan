@@ -40,12 +40,24 @@ namespace QuanLyHocPhan
 
         private void btnDanhSachRole_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new RoleList();
+            Main.Content = new RoleList(Connection);
         }
 
-        private void btnThongTinNhom_Click(object sender, RoutedEventArgs e)
+        private void btnCapRole_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new GroupInfo();
+        }
+
+        private void btnDanhSachTable_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new TableList(Connection);
+        }
+
+        private void btnCapQuyen_Click(object sender, RoutedEventArgs e)
+        {
+            // open window GrantPrivilege
+            GrantPrivilege grantPrivilege = new GrantPrivilege(Connection);
+            grantPrivilege.Show();
         }
 
         public PortalWindow(OracleConnection Connection)
@@ -63,38 +75,14 @@ namespace QuanLyHocPhan
 
                     MessageBox.Show("Đăng nhập thành công " + Connection.ServerVersion);
 
-                    // fetch all users and MessageBox show
-                    OracleCommand cmd = new OracleCommand();
-                    cmd.Connection = Connection;
-                    cmd.CommandText = "SELECT * FROM all_users";
 
-                    cmd.CommandType = System.Data.CommandType.Text;
-
-                    OracleDataReader reader = cmd.ExecuteReader();
-
-                    // Create an array
-                    List<User> list = new List<User>();
-
-                    while (reader.Read())
-                    {
-                        // Console.WriteLine("{0} {1} {2}", reader.GetString(0), reader.GetString(1), reader.GetString(2));
-                        User user = new User();
-                        user.Username = reader.GetString(0);
-                        user.Roles = reader.GetString(2);
-
-                        list.Add(user);
-                    }
-
-                    reader.Dispose();
-                    cmd.Dispose();
+                    // Set main content
+                    Main.Content = new UserList(Connection);
                 }
                 else
                 {
                     throw new Exception("Connection is not open");
                 }
-
-                // Set main content
-                Main.Content = new UserList(Connection);
             }
             catch (Exception ex)
             {
@@ -106,6 +94,14 @@ namespace QuanLyHocPhan
 
         }
 
+        private void btnDangXuat(object sender, RoutedEventArgs e)
+        {
+            // close current windows and show login window
+            this.Close();
+
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+        }
     }
 
     //public class MenuItem {

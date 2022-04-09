@@ -41,3 +41,13 @@ C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\bin\Debug\System.Text
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\bin\Debug\System.ValueTuple.xml
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\QuanLyHocPhan.csproj.CopyComplete
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\TableList.g.cs
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\TableList.baml
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\WholesomePopup.g.cs
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\WholesomePopup.baml
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\GrantPrivilege.g.cs
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\GrantPrivilege.baml
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\bin\Debug\QuanLyHocPhan.exe.manifest
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\bin\Debug\QuanLyHocPhan.application
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\QuanLyHocPhan.exe.manifest
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\QuanLyHocPhan.application

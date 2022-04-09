@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyHocPhan"
         mc:Ignorable="d"
-        Title="Đăng nhập" Height="450" Width="800">
+        Title="Đăng nhập" Height="500" Width="800">
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="63*"/>
@@ -29,7 +29,10 @@
 
 			<Label Content="Đăng nhập" FontSize="36" HorizontalAlignment="Center" />
 
-			<Label Content="Tên đăng nhập / MSSV" />
+            <Label Content="Host name" />
+            <TextBox x:Name="hostName" Text="localhost" />
+
+            <Label Content="Tên đăng nhập / MSSV" />
 			<TextBox x:Name="userId" />
 
             <Label Content="Mật khẩu" />
@@ -43,8 +46,6 @@
 
             <Button x:Name="loginButton">Đăng nhập</Button>
 
-			<Button x:Name="switchToPortal">Switch to Portal (testing)</Button>
-            
 
 		</StackPanel>
 

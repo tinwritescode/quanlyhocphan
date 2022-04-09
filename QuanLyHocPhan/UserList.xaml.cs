@@ -20,13 +20,21 @@ namespace QuanLyHocPhan
     {
         public String Username { get; set; }
 
-        // custom get roles return string
-        public string Roles
-        {
-            set; get;
-        }
+        public string Userid { set; get; }
+        public String Created { get; set; }
     }
 
+    public class Database
+    {
+        public String TableName { get; set; }
+    }
+
+    public class PermissionResponse
+    {
+        public String Username { get; set; }
+        public String Privilege { get; set; }
+        public String AdminOption { get; set; }
+    }
 
     /// <summary>
     /// Interaction logic for UserList.xaml
@@ -37,47 +45,66 @@ namespace QuanLyHocPhan
         public int TotalPage { get; set; }
 
         private List<User> users;
+        private OracleConnection oracleConnection;
 
         public void btnCheckInfo_Click(object sender, RoutedEventArgs e)
         {
+            //SELECT * FROM USER_SYS_PRIVS WHERE username='TRUNGTIN'
+            // get selected user from datagrid
+            User user = (User)UserDataGrid.SelectedItem;
+
+            // get all databases
+            OracleCommand cmd = new OracleCommand("SELECT USERNAME, PRIVILEGE, ADMIN_OPTION FROM USER_SYS_PRIVS WHERE username='" + user.Username.ToUpper() + "'", oracleConnection);
+            OracleDataReader reader = cmd.ExecuteReader();
+
+            // create list of permission
+            List<PermissionResponse> permissions = new List<PermissionResponse>();
+
+            while (reader.Read())
+            {
+                PermissionResponse permission = new PermissionResponse();
+                permission.Username = reader.GetString(0);
+                permission.Privilege = reader.GetString(1);
+                permission.AdminOption = reader.GetString(2);
+                permissions.Add(permission);
+            }
+
+            string data = "";
+
+            // loop through
+            foreach (PermissionResponse permission in permissions)
+            {
+                data += permission.Username + " " + permission.Privilege + " " + permission.AdminOption + "\n";
+            }
+
+            // show in WholesomePopup window
+            new WholesomePopup(data).Show();
         }
 
         public void btnGrantRole_Click(object sender, RoutedEventArgs e)
         {
-            // loop through all checkboxes, if checked, add to list
-            // List<User> list = new List<User>();
-            // foreach (User user in UserDataGrid.Items)
-            // {
-            //     if (user.IsChecked)
-            //     {
-            //         list.Add(user);
-            //     }
-            // }
-
-            // // get each roles
-            // string[] roles = new string[list.Count];
-            // for (int i = 0; i < list.Count; i++)
-            // {
-            //     roles[i] = list[i].GetRole();
-            // }
-
-            // // alert roles plat
-            // MessageBox.Show(string.Join(",", roles));
         }
 
         public UserList(OracleConnection connection)
         {
             InitializeComponent();
 
-            // Load data
-            // UserDataGrid.ItemsSource = new List<User>()
-            // {
-            //     new User() { Username = "admin", Roles = "admin,user" },
-            //     new User() { Username = "trungtin", Roles = "admin" }
-            // };
-
             // set ItemsSource for DataGrid
             users = new List<User>();
+            oracleConnection = connection;
+
+            // get all users
+            OracleCommand cmd = new OracleCommand("select username, user_id, created from all_users", connection);
+            OracleDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                User user = new User();
+                user.Username = reader.GetString(0);
+                user.Userid = reader.GetString(1);
+                user.Created = reader.GetString(2);
+                users.Add(user);
+            }
 
             UserDataGrid.ItemsSource = users;
         }

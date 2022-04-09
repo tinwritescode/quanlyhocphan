@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\App.xaml
-5-404897155
+8-925947101
 
-10-292757682
+13-1722324494
 26-1887607101
-GroupInfo.xaml;LoginWindow.xaml;PortalWindow.xaml;RoleList.xaml;UserList.xaml;
+GrantPrivilege.xaml;GroupInfo.xaml;LoginWindow.xaml;PortalWindow.xaml;RoleList.xaml;TableList.xaml;UserList.xaml;WholesomePopup.xaml;
 
-True
+False
 

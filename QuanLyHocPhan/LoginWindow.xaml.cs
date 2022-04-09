@@ -26,18 +26,12 @@ namespace QuanLyHocPhan
         {
             InitializeComponent();
 
-            userId.Text = "trungtin";
-            password.Password = "aimabiet";
+            hostName.Text = "localhost";
+            userId.Text = "QLSoYTe".ToUpper();
+            password.Password = "QLSoYTe";
 
             loginButton.AddHandler(Button.ClickEvent, new RoutedEventHandler(LoginHandler));
         }
-
-        //private void SwitchToPortal(object sender, RoutedEventArgs e)
-        //{
-        //    this.Hide();
-        //    PortalWindow portalWindow = new PortalWindow();
-        //    portalWindow.Show();
-        //}
 
         private async void LoginHandler(object sender, RoutedEventArgs e)
         {
@@ -48,8 +42,8 @@ namespace QuanLyHocPhan
                 {
                     try
                     {
-                        String connectionString = "Data Source = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = " + serviceName.Text + "))); User Id = " + userId.Text + "; Password = " + password.Password + ";";
-
+                        String connectionString = "Data Source = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = " + hostName.Text + ")(PORT = 1521)))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = " + serviceName.Text + "))); User Id = " + userId.Text + "; Password = " + password.Password + "; ";//'DBA Privilege=SYSDBA;";
+                        
                         // Please replace the connection string attribute settings
                         OracleConnection connection = new OracleConnection(connectionString);
 

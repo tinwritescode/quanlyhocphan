@@ -9,6 +9,14 @@
       Title="RoleList">
 
     <Grid>
-        <Label Content="Role list" FontSize="30" />
+        <Label Content="Chọn người dùng" FontSize="20" Margin="58,43,335,347.6" />
+    
+        <ComboBox x:Name="ChonNguoiDung" HorizontalAlignment="Left" Margin="58,88,0,0" VerticalAlignment="Top" Width="571" Height="50"/>
+        <Label Content="Chọn Role" FontSize="20" Margin="58,177,335,213.6" />
+        <ComboBox x:Name="ChonRole" HorizontalAlignment="Left" Margin="58,215,0,0" VerticalAlignment="Top" Width="571" Height="50"/>
+        <Button x:Name="CapQuyen" Content="Cấp quyền" HorizontalAlignment="Left" Margin="46,307,0,0" VerticalAlignment="Top" Width="249" Height="75" />
+        <Button x:Name="HuyQuyen" Content="Huỷ cấp quyền" HorizontalAlignment="Left" Margin="329,307,0,0" VerticalAlignment="Top" Width="249" Height="75" />
+
+
     </Grid>
 </Page>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\
 QuanLyHocPhan
 none
 false
 DEBUG;TRACE
-c:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\App.xaml
-5-2061051809
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\App.xaml
+8-925947101
 
-10-1964659903
-26-1006496396
-GroupInfo.xaml;LoginWindow.xaml;PortalWindow.xaml;RoleList.xaml;UserList.xaml;
+12-879965127
+26-1887607101
+GrantPrivilege.xaml;GroupInfo.xaml;LoginWindow.xaml;PortalWindow.xaml;RoleList.xaml;TableList.xaml;UserList.xaml;WholesomePopup.xaml;
 
-True
+False
 

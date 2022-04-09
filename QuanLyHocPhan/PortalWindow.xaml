@@ -13,17 +13,22 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Button Content="Danh sách người dùng" 
-                    Click="btnDanhSachNguoiDung_Click" HorizontalAlignment="Left" Width="123"
+                    Click="btnDanhSachNguoiDung_Click"
                  />
                 <Button Content="Danh sách role" Grid.Row="1"
                     Click="btnDanhSachRole_Click"
                 />
-                <Button Content="Thông tin nhóm" Grid.Row="2"
-                    Click="btnThongTinNhom_Click"
+                <Button Content="Cấp quyền cho người dùng/role" Grid.Row="2"
+                    Click="btnCapQuyen_Click"
                 />
 
+                <Button Content="Đăng xuất" Grid.Row="3"
+                    Click="btnDangXuat"
+
+                />
 
             </Grid>
             <StackPanel>
