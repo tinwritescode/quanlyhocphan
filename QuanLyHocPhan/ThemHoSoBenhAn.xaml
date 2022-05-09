@@ -57,8 +57,46 @@
                     </Grid>
                     
                 </TabItem>
-                <TabItem Header="HSBA_DV">
+                <TabItem Header="HSBA_DV" HorizontalAlignment="Left" Margin="-1.6,-2,-1.6,-0.2" Width="60">
                     <Grid Background="White">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <GroupBox
+                             Header="Thông tin bệnh nhân" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="738">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+
+                                    <StackPanel Grid.Column="0" Grid.Row="0">
+                                        <Label Content="Mã bệnh nhân"/>
+                                        <Label Content="Ngày"/>
+                                        <Label Content="Chẩn đoán"/>
+                                        <Label Content="Mã bác sĩ chẩn đoán"/>
+                                        <Label Content="Mã Khoa chẩn đoán"/>
+                                        <Label Content="Mã Cơ sở y tế"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.ColumnSpan="2" Margin="136,0,-0.4,-0.4">
+                                        <TextBox Text="456" Padding="4"/>
+                                        <TextBox Text="9/5/2022" Padding="4"/>
+                                        <TextBox Text="Tiểu đường" Padding="4"/>
+                                        <TextBox Text="45" Padding="4"/>
+                                        <TextBox Text="2" Padding="4"/>
+                                        <TextBox Text="4" Padding="4"/>
+
+
+                                    </StackPanel>
+
+                                    <Button Width="100" Margin="0,10" Grid.Row="1" Grid.ColumnSpan="2" Padding="4" Content="Tạo"/>
+
+                                </Grid>
+
+                            </GroupBox>
+                        </ScrollViewer>
                     </Grid>
                 </TabItem>
 
