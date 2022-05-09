@@ -1,0 +1,69 @@
+﻿<Window x:Class="QuanLyHocPhan.ThemHoSoBenhAn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHocPhan"
+        mc:Ignorable="d"
+        Title="ThemHoSoBenhAn" Height="450" Width="800">
+    <Border Padding="4">
+
+        <StackPanel>
+            <Label Content="Thêm hồ sơ bệnh án" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+            <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
+                <TabItem Header="HSBA">
+                    <Grid Background="White">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <GroupBox
+                             Header="Thông tin bệnh nhân" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="738">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+
+                                    <StackPanel Grid.Column="0" Grid.Row="0">
+                                        <Label Content="Mã bệnh nhân"/>
+                                        <Label Content="Ngày"/>
+                                        <Label Content="Chẩn đoán"/>
+                                        <Label Content="Mã bác sĩ chẩn đoán"/>
+                                        <Label Content="Mã Khoa chẩn đoán"/>
+                                        <Label Content="Mã Cơ sở y tế"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.ColumnSpan="2" Margin="136,0,-0.4,-0.4">
+                                        <TextBox Text="456" Padding="4"/>
+                                        <TextBox Text="9/5/2022" Padding="4"/>
+                                        <TextBox Text="Tiểu đường" Padding="4"/>
+                                        <TextBox Text="45" Padding="4"/>
+                                        <TextBox Text="2" Padding="4"/>
+                                        <TextBox Text="4" Padding="4"/>
+                                        
+                                        
+                                    </StackPanel>
+
+                                    <Button Width="100" Margin="0,10" Grid.Row="1" Grid.ColumnSpan="2" Padding="4" Content="Tạo"/>
+
+                                </Grid>
+
+                            </GroupBox>
+                        </ScrollViewer>
+                        
+
+                    </Grid>
+                    
+                </TabItem>
+                <TabItem Header="HSBA_DV">
+                    <Grid Background="White">
+                    </Grid>
+                </TabItem>
+
+            </TabControl>
+
+        </StackPanel>
+    </Border>
+</Window>

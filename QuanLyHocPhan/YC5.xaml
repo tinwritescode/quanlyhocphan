@@ -11,10 +11,41 @@
         <StackPanel>
             <Label Content="(Bác sĩ) Xem thông tin" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24"/>
 
-
+            <Button Content="Thêm hồ sơ" Width="200" Height="20" Margin="20,0" HorizontalAlignment="Left" Click="Button_Click">
+                
+            </Button>
             <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
                 <TabItem Header="HSBA">
                     <Grid Background="White">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <GroupBox
+                             Header="Thông tin bệnh nhân" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="738">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    
+                                <StackPanel Grid.Column="0">
+                                    <Label Content="Mã bệnh nhân"/>
+                                    <Label Content="Ngày"/>
+                                    <Label Content="Chẩn đoán"/>
+                                    <Label Content="Tên bác sĩ chẩn đoán"/>
+                                    <Label Content="Khoa chẩn đoán"/>
+                                    <Label Content="Cơ sở y tế"/>
+                                </StackPanel>
+                                    <StackPanel Grid.ColumnSpan="2" Margin="136,0,-0.4,-0.4">
+                                        <Label Content="456"/>
+                                        <Label Content="9/5/2022"/>
+                                        <Label Content="Tiểu đường"/>
+                                        <Label Content="Nguyễn Văn A"/>
+                                        <Label Content="Huyết áp"/>
+                                        <Label Content="Nguyễn Đình Chiểu"/>
+                                    </StackPanel>
+                                </Grid>
+
+                            </GroupBox>
+                        </ScrollViewer>
                     </Grid>
                 </TabItem>
                 <TabItem Header="HSBA_DV">

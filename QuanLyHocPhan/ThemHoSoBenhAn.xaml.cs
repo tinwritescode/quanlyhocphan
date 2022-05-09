@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace QuanLyHocPhan
 {
     /// <summary>
-    /// Interaction logic for YC5.xaml
+    /// Interaction logic for ThemHoSoBenhAn.xaml
     /// </summary>
-    public partial class YC5 : Window
+    public partial class ThemHoSoBenhAn : Window
     {
-        public YC5()
+        public ThemHoSoBenhAn()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ThemHoSoBenhAn window = new ThemHoSoBenhAn();
-
-            window.Show();
         }
     }
 }
