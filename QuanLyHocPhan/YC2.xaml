@@ -1,0 +1,22 @@
+﻿<Window x:Class="QuanLyHocPhan.YC2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHocPhan"
+        mc:Ignorable="d"
+        Title="YC2" Height="450" Width="800">
+    <Border Padding="4">
+        
+    <StackPanel>
+        <Label Content="(Thanh tra) Xem dữ liệu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+        <TextBlock TextWrapping="WrapWithOverflow">
+        <Run FontSize="16" Text="Vì số thanh tra ít (5 thanh tra), không ưu tiên làm giao diện. Hãy liên hệ với Sysdba để Sysdba mở database ra, giúp cho việc xem được đầy đủ và thuận tiện hơn">
+    
+        </Run>
+        </TextBlock>
+
+    </StackPanel>
+    </Border>
+</Window>

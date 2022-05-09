@@ -1,0 +1,95 @@
+﻿<Window x:Class="QuanLyHocPhan.YC6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyHocPhan"
+        mc:Ignorable="d"
+        Title="YC6" Height="450" Width="800">
+    <Border Padding="4">
+
+        <StackPanel>
+            <Label Content="(Nhân viên/Bệnh) Xem thông tin chính mình" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+            <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
+                <TabItem Header="Bệnh nhân">
+                    <Grid Background="White">
+                        <ScrollViewer Height="251" VerticalScrollBarVisibility="Auto">
+                            <GroupBox
+                             Header="Thông tin bệnh nhân" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="738">
+                                <StackPanel>
+                                    <Label Content="Họ tên"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Mã CSYT"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="CMND"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Ngày sinh"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Số nhà"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Tên đường"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Số nhà"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Huận huyện"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Tình/thành phố"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Tiền sử bệnh"/>
+                                    <TextBox Padding="4" MinLines="4"/>
+                                    <Label Content="Tiền sử bệnh gia đình"/>
+                                    <TextBox Padding="4" MinLines="4"/>
+                                    <Label Content="Dị ứng thuốc"/>
+                                    <TextBox Padding="4" MinLines="4"/>
+                                </StackPanel>
+                            </GroupBox>
+                        </ScrollViewer>
+                        <Button Content="Lưu" HorizontalAlignment="Left" Margin="619,277,0,0" VerticalAlignment="Top" Width="129" Height="38"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Nhân viên">
+                    <Grid Background="White">
+                        <ScrollViewer Height="251" VerticalScrollBarVisibility="Auto">
+                            <GroupBox
+                             Header="Thông tin nhân viên" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="738">
+                                <StackPanel>
+                                    <Label Content="Họ tên"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Mã CSYT"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Phái"/>
+                                    <ComboBox Padding="4">
+                                        <ComboBoxItem Content="Nam"></ComboBoxItem>
+                                        <ComboBoxItem Content="Nữ"></ComboBoxItem>
+                                    </ComboBox>
+                                    <Label Content="CMND"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Ngày sinh"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Quê quán"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Số điện thoại"/>
+                                    <TextBox Padding="4"/>
+                                    <Label Content="Vai trò"/>
+                                    <ComboBox Padding="4">
+                                        <ComboBoxItem Content="Bác sĩ"></ComboBoxItem>
+                                        <ComboBoxItem Content="Y tá"></ComboBoxItem>
+                                        <ComboBoxItem Content="Lễ tân"></ComboBoxItem>
+                                    </ComboBox>
+                                    <Label Content="Chuyên khoa"/>
+                                    <ComboBox Padding="4">
+                                        <ComboBoxItem Content="Khoa tâm thần"></ComboBoxItem>
+                                        <ComboBoxItem Content="Khoa ung não"></ComboBoxItem>
+                                        <ComboBoxItem Content="Khoa tự kỷ"></ComboBoxItem>
+                                    </ComboBox>
+                                </StackPanel>
+                            </GroupBox>
+                        </ScrollViewer>
+                        <Button Content="Lưu" HorizontalAlignment="Left" Margin="619,277,0,0" VerticalAlignment="Top" Width="129" Height="38"/>
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </Border>
+</Window>

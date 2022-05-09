@@ -134,6 +134,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PhanHe2.xaml.cs">
+      <DependentUpon>PhanHe2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RoleList.xaml.cs">
       <DependentUpon>RoleList.xaml</DependentUpon>
     </Compile>
@@ -146,6 +149,27 @@
     <Compile Include="WholesomePopup.xaml.cs">
       <DependentUpon>WholesomePopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="YC1.xaml.cs">
+      <DependentUpon>YC1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC2.xaml.cs">
+      <DependentUpon>YC2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC3.xaml.cs">
+      <DependentUpon>YC3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC4.xaml.cs">
+      <DependentUpon>YC4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC5.xaml.cs">
+      <DependentUpon>YC5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC6.xaml.cs">
+      <DependentUpon>YC6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YC7.xaml.cs">
+      <DependentUpon>YC7.xaml</DependentUpon>
+    </Compile>
     <Page Include="GrantPrivilege.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PhanHe2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +203,34 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WholesomePopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YC7.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

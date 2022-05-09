@@ -102,6 +102,11 @@ namespace QuanLyHocPhan
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
         }
+
+        private void btnPhanHe2_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new PhanHe2();
+        }
     }
 
     //public class MenuItem {
