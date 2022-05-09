@@ -15,6 +15,18 @@
             <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
                 <TabItem Header="HSBA">
                     <Grid Background="White">
+                        <DataGrid x:Name="DSHSBA" HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="603" SelectionChanged="DataGrid_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Mã hồ sơ bệnh án" Binding="{Binding XPath=@MAHSBA}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding XPath=@MABN}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Ngày" Binding="{Binding XPath=@NGAY}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Chuẩn đoán" Binding="{Binding XPath=@CHUANDOAN}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Mã bác sĩ" Binding="{Binding XPath=@MABS}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Mã khoa" Binding="{Binding XPath=@MAKHOA}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Mã CSYT" Binding="{Binding XPath=@MACSYT}" FontFamily="Arial" FontStyle="Italic"/>
+                                <DataGridTextColumn Header="Kết luận" Binding="{Binding XPath=@KETLUAN}" FontFamily="Arial" FontStyle="Italic"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
                     </Grid>
                 </TabItem>
                 <TabItem Header="HSBA_DV">

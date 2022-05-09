@@ -22,6 +22,12 @@ namespace QuanLyHocPhan
         public YC3()
         {
             InitializeComponent();
+            
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
