@@ -67,3 +67,5 @@ C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\YC4.baml
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\YC5.baml
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\YC6.baml
 C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\YC7.baml
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\ThemHoSoBenhAn.g.cs
+C:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\ThemHoSoBenhAn.baml

@@ -143,6 +143,9 @@
     <Compile Include="TableList.xaml.cs">
       <DependentUpon>TableList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ThemHoSoBenhAn.xaml.cs">
+      <DependentUpon>ThemHoSoBenhAn.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserList.xaml.cs">
       <DependentUpon>UserList.xaml</DependentUpon>
     </Compile>
@@ -195,6 +198,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TableList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemHoSoBenhAn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
