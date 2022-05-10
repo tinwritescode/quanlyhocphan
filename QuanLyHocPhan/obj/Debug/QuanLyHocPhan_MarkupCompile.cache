@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 c:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\obj\Debug\
+=======
+C:\Users\hieu2\OneDrive\Tài liệu\GitHub\quanlyhocphan\QuanLyHocPhan\obj\Debug\
+>>>>>>> fcc71c3dbc6eeae2a8b5e653d3d6eb6e7421ca20
 QuanLyHocPhan
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 c:\Users\trungtin\source\repos\QuanLyHocPhan\QuanLyHocPhan\App.xaml
 17-1555029398
 
 22-426555226
 26-1006496396
+=======
+C:\Users\hieu2\OneDrive\Tài liệu\GitHub\quanlyhocphan\QuanLyHocPhan\App.xaml
+171304528611
+
+22737152794
+26-1898006834
+>>>>>>> fcc71c3dbc6eeae2a8b5e653d3d6eb6e7421ca20
 GrantPrivilege.xaml;GroupInfo.xaml;LoginWindow.xaml;PhanHe2.xaml;PortalWindow.xaml;RoleList.xaml;TableList.xaml;ThemHoSoBenhAn.xaml;UserList.xaml;WholesomePopup.xaml;YC1.xaml;YC2.xaml;YC3.xaml;YC4.xaml;YC5.xaml;YC6.xaml;YC7.xaml;
 
 True
