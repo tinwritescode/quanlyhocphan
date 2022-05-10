@@ -50,6 +50,9 @@ namespace QuanLyHocPhan
 
             // Add sample item to DSHSBA
             DSHSBA.ItemsSource = list;
+
+
+
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
