@@ -8,7 +8,11 @@
             <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
                 <TabItem Header="HSBA">
                     <Grid Background="White">
-                        <DataGrid x:Name="DSHSBA" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged" Margin="0,0,-0.4,-0.2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="77*"/>
+                            <ColumnDefinition Width="680*"/>
+                        </Grid.ColumnDefinitions>
+                        <DataGrid x:Name="DSHSBA" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged" Grid.ColumnSpan="2">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã hồ sơ bệnh án" Binding="{Binding MAHSBA}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding MABN}" FontFamily="Arial" FontStyle="Italic" />
@@ -24,15 +28,17 @@
                 </TabItem>
                 <TabItem Header="HSBA_DV">
                     <Grid Background="White">
-                        <DataGrid x:Name="DSHSBADV" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged" Margin="0,0,-0.4,-0.2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="13*"/>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="734*"/>
+                        </Grid.ColumnDefinitions>
+                        <DataGrid x:Name="DSHSBADV" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged" Margin="0,0,321,0" Grid.ColumnSpan="3">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã hồ sơ bệnh án" Binding="{Binding MAHSBA}" FontFamily="Arial" FontStyle="Italic" />
-                                <DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding MABN}" FontFamily="Arial" FontStyle="Italic" />
+                                <DataGridTextColumn Header="Mã dịch vụ" Binding="{Binding MADV}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Ngày" Binding="{Binding NGAY}" FontFamily="Arial" FontStyle="Italic" />
-                                <DataGridTextColumn Header="Chuẩn đoán" Binding="{Binding CHUANDOAN}" FontFamily="Arial" FontStyle="Italic" />
-                                <DataGridTextColumn Header="Mã bác sĩ" Binding="{Binding MABS}" FontFamily="Arial" FontStyle="Italic" />
-                                <DataGridTextColumn Header="Mã khoa" Binding="{Binding MAKHOA}" FontFamily="Arial" FontStyle="Italic" />
-                                <DataGridTextColumn Header="Mã CSYT" Binding="{Binding MACSYT}" FontFamily="Arial" FontStyle="Italic" />
+                                <DataGridTextColumn Header="Mã KTV" Binding="{Binding MAKTV}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Kết luận" Binding="{Binding KETLUAN}" FontFamily="Arial" FontStyle="Italic" />
                             </DataGrid.Columns>
                         </DataGrid>

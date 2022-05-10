@@ -27,6 +27,16 @@ namespace QuanLyHocPhan
 
     }
 
+    public class HSBADV
+    {
+        public string MAHSBA { get; set; }
+        public string MADV { get; set; }
+        public string NGAY { get; set; }
+        public string MAKTV { get; set; }
+        public string KETLUAN { get; set; }
+
+    }
+
     /// <summary>
     /// Interaction logic for YC3.xaml
     /// </summary>
@@ -47,9 +57,20 @@ namespace QuanLyHocPhan
             list.Add(new HSBA() { MAHSBA = "6", MABN = "6", NGAY = "11/11/2011", CHUANDOAN = "Chuẩn", MABS = "6", MAKHOA = "6", MACSYT = "6", KETLUAN = "Kết luận" });
             list.Add(new HSBA() { MAHSBA = "7", MABN = "7", NGAY = "11/11/2011", CHUANDOAN = "Chuẩn", MABS = "7", MAKHOA = "7", MACSYT = "7", KETLUAN = "Kết luận" });
 
+            List<HSBADV> list2 = new List<HSBADV>();
 
+            // add sample data
+            list2.Add(new HSBADV() { MAHSBA = "1", MADV = "1", NGAY = "11/11/2011", MAKTV = "1", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "2", MADV = "2", NGAY = "11/11/2011", MAKTV = "2", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "3", MADV = "3", NGAY = "11/11/2011", MAKTV = "3", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "4", MADV = "4", NGAY = "11/11/2011", MAKTV = "4", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "5", MADV = "5", NGAY = "11/11/2011", MAKTV = "5", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "6", MADV = "6", NGAY = "11/11/2011", MAKTV = "6", KETLUAN = "Kết luận" });
+            list2.Add(new HSBADV() { MAHSBA = "7", MADV = "7", NGAY = "11/11/2011", MAKTV = "7", KETLUAN = "Kết luận" });
             // Add sample item to DSHSBA
             DSHSBA.ItemsSource = list;
+            DSHSBADV.ItemsSource = list2;
+
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
