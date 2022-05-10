@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:QuanLyHocPhan"
         mc:Ignorable="d"
         Title="YC7" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Border Padding="4">
+        <StackPanel>
+
+        <Label Content="Thông báo" FontSize="32" HorizontalAlignment="Center"></Label>
+        <Label Content="Hỗ trợ sở gửi thông báo cho các cuộc họp khẩn cấp liên quan đến các cơ sở y tế" FontSize="12" HorizontalAlignment="Center"></Label>
+
+        <Label Content="Nội dung" FontSize="16"></Label>
+        <RichTextBox Height="120" Padding="4" />
+        <Label Content="Ngày giờ" FontSize="16"></Label>
+        <DatePicker Padding="8" />
+        <Label Content="Địa điểm" FontSize="16"></Label>
+        <TextBox Padding="4" />
+
+        <Button Width="200" Margin="12" Content="Gửi thông báo" Padding="8"></Button>
+        </StackPanel>
+    </Border>
 </Window>

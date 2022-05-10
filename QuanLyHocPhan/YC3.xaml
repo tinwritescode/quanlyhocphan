@@ -40,6 +40,8 @@
                                 <DataGridTextColumn Header="Ngày" Binding="{Binding NGAY}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Mã KTV" Binding="{Binding MAKTV}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Kết luận" Binding="{Binding KETLUAN}" FontFamily="Arial" FontStyle="Italic" />
+            
+
                             </DataGrid.Columns>
                         </DataGrid>
                     </Grid>

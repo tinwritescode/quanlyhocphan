@@ -11,9 +11,6 @@
         <StackPanel>
             <Label Content="(Bác sĩ) Xem thông tin" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24"/>
 
-            <Button Content="Thêm hồ sơ" Width="200" Height="20" Margin="20,0" HorizontalAlignment="Left" Click="Button_Click">
-                
-            </Button>
             <TabControl Margin="10" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="763">
                 <TabItem Header="HSBA">
                     <Grid Background="White">
