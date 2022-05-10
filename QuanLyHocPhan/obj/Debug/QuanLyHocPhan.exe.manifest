@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuanLyHocPhan.exe" size="69616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuanLyHocPhan.exe" size="73712">
       <assemblyIdentity name="QuanLyHocPhan" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rIwFzeEITR+8I2RJucx5tpMjPTDKjN1w2lfjc60DYx4=</dsig:DigestValue>
+        <dsig:DigestValue>gEaGJep+9A/CH9aUHx1PknnMtRqYmx44fcXsSLd0c8g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
