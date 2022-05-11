@@ -78,5 +78,10 @@ namespace QuanLyHocPhan
             public string KETLUAN { get; set; }
 
         }
+
+        private void DSHSBA_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

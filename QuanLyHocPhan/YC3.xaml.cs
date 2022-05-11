@@ -77,5 +77,13 @@ namespace QuanLyHocPhan
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            ThemHoSoBenhAn window = new ThemHoSoBenhAn();
+
+            window.Show();
+        }
     }
 }

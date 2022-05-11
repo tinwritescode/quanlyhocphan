@@ -19,7 +19,7 @@
                             <ColumnDefinition Width="77*"/>
                             <ColumnDefinition Width="680*"/>
                         </Grid.ColumnDefinitions>
-                        <DataGrid x:Name="DSHSBA" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" Grid.ColumnSpan="2">
+                        <DataGrid x:Name="DSHSBA" AutoGenerateColumns="False" Height="325" VerticalAlignment="Top" Grid.ColumnSpan="2" SelectionChanged="DSHSBA_SelectionChanged">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Mã hồ sơ bệnh án" Binding="{Binding MAHSBA}" FontFamily="Arial" FontStyle="Italic" />
                                 <DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding MABN}" FontFamily="Arial" FontStyle="Italic" />
